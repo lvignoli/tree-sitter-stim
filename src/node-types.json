@@ -1,0 +1,227 @@
+[
+  {
+    "type": "block_start",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "instruction",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "circuit",
+    "named": true,
+    "root": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "block_end",
+          "named": true
+        },
+        {
+          "type": "block_start",
+          "named": true
+        },
+        {
+          "type": "comment",
+          "named": true
+        },
+        {
+          "type": "instruction",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "comment",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "instruction",
+    "named": true,
+    "fields": {
+      "name": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "name",
+            "named": true
+          }
+        ]
+      },
+      "parens_agruments": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "parens_arguments",
+            "named": true
+          }
+        ]
+      },
+      "tag": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "tag",
+            "named": true
+          }
+        ]
+      },
+      "targets": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "targets",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "measurement_record_target",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "parens_arguments",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "arg",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "pauli_target",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "qubit_target",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "sweep_bit_target",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "tag",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "targets",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "combiner_target",
+          "named": true
+        },
+        {
+          "type": "measurement_record_target",
+          "named": true
+        },
+        {
+          "type": "pauli_target",
+          "named": true
+        },
+        {
+          "type": "qubit_target",
+          "named": true
+        },
+        {
+          "type": "sweep_bit_target",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "\n",
+    "named": false
+  },
+  {
+    "type": "!",
+    "named": false
+  },
+  {
+    "type": "#",
+    "named": false
+  },
+  {
+    "type": "(",
+    "named": false
+  },
+  {
+    "type": ")",
+    "named": false
+  },
+  {
+    "type": ",",
+    "named": false
+  },
+  {
+    "type": "[",
+    "named": false
+  },
+  {
+    "type": "]",
+    "named": false
+  },
+  {
+    "type": "arg",
+    "named": true
+  },
+  {
+    "type": "block_end",
+    "named": true
+  },
+  {
+    "type": "combiner_target",
+    "named": true
+  },
+  {
+    "type": "name",
+    "named": true
+  },
+  {
+    "type": "rec[-",
+    "named": false
+  },
+  {
+    "type": "sweep[-",
+    "named": false
+  },
+  {
+    "type": "{",
+    "named": false
+  }
+]
